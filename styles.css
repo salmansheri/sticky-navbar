@@ -1,0 +1,87 @@
+/* styling body */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* styling navigation bar  */
+.navbar {
+  display: flex;
+  position: fixed;
+  top: 0;
+  background-color: white; 
+  width: 100%;
+  justify-content: end;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);  
+  /* adding transition to nav bar  */
+  transition: background-color 0.4s; 
+}
+
+.navbar.active {
+    background-color: black;
+}
+
+.navbar.active li a {
+    color: white; 
+}
+
+
+/* styling unordered list  */
+
+ul {
+  display: flex;
+  list-style-type: none;
+}
+
+
+
+
+
+/* styling anchor tags  */
+
+a {
+  text-decoration: none;
+  margin: 0 40px;
+  
+  font-family: cursive;
+}
+
+/* adding hover effect to anchor tags  */
+
+.navbar ul li a:hover {
+    color: red; 
+
+}
+
+/* styling top container class  */
+.top-container {
+  /* inserting a background image  */
+  background-image: url("https://images.unsplash.com/photo-1515704089429-fd06e6668458?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  /* set the margin to 100px  */
+  margin-top: 50px;
+
+  /* set the height 100% of veiwport height  */
+  height: 100vh;
+  background-size: cover;
+
+  /* flex-box  */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.top-container h1 {
+  color: white;
+  font-size: 50px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  letter-spacing: 2px;
+}
+
+
+
+.text {
+  margin: 50px 5%;
+  font-family: sans-serif;
+}
